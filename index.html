@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #555;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .contact-info {
+            text-align: right;
+            margin-top: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        h2 {
+            font-size: 1.5em;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .skills div {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .skills div:last-child {
+            margin-right: 0;
+        }
+        .education p {
+            margin: 5px 0;
+        }
+        .degree {
+            font-weight: bold;
+        }
+        .years {
+            font-size: 0.9em;
+            color: #666;
+        }
+        @media (max-width: 768px) {
+            .skills {
+                flex-direction: column;
+            }
+            .skills div {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div>
+                <h1>Еремин Сергей Александрович</h1>
+                <div class="subtitle">Аналитик данных</div>
+            </div>
+            <div class="contact-info">
+                <p>Телефон: +79109088872</p>
+                <p>Email: <a href="mailto:sergyereminn@gmail.com">sergyereminn@gmail.com</a></p>
+                <p>Telegram: <a href="https://t.me/hi_eremin">https://t.me/hi_eremin</a></p>
+            </div>
+        </header>
+        <section class="section">
+            <h2>Краткая биография</h2>
+            <p>Я учусь на третьем курсе в институте по специальности "Информатика и вычислительная техника". Заканчиваю годовое обучение в GeekBrains, где хорошо усвоил SQL, Python, основы статистики, A/B тестирования, Power BI, Excel, нотации BPMN и UML. Есть интересные проекты в портфолио, связанные с визуализацией в Power BI, анализом данных в Python. На LeetCode решаю задачи на SQL (medium).</p>
+        </section>
+        <section class="section">
+            <h2>Навыки</h2>
+            <div class="skills">
+                <div>
+                    <h3>Технические навыки</h3>
+                    <p>Python, SQL, Power BI, Excel, UML, BPMN</p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Образование</h2>
+            <div class="education">
+                <p class="degree">Неоконченное высшее (Заочно)</p>
+                <p class="years">2022 - 2026</p>
+                <p>Рязанский филиал Московского политехнического университета</p>
+                <p>Информатика и вычислительная техника</p>
+                <p class="degree">GeekBrains</p>
+                <p class="years">02.2023 – по настоящее время</p>
+                <p>Data science</p>
+                <p class="degree">Stepik</p>
+                <p class="years">09.2023 – 12.2023</p>
+                <p>Интерактивный тренажер по SQL</p>
+                <p class="degree">Дальневосточный федеральный университет</p>
+                <p class="degree">Среднее профессиональное</p>
+                <p class="years">2018 - 2022</p>
+                <p>Петербургский Государственный Университет Путей Сообщения императора Александра I</p>
+                <p>Электроснабжение (по отраслям)</p>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Проекты</h2>
+            <p><strong>Участвование в соревнованиях на Kaggle</strong></p>
+            <ul>
+                <li>Использовал Python, библиотеки Pandas, NumPy, Matplotlib и Seaborn для анализа данных и создания моделей машинного обучения.</li>
+                <li>Анализировал данные, создавал визуализации и разрабатывал модели для решения различных задач.</li>
+            </ul>
+            <p><strong>Создание дашбордов в Power BI и выполнение ETL процессов</strong></p>
+            <ul>
+                <li>Разрабатывал интерактивные дашборды для визуализации данных, предоставляя инсайты для бизнеса.</li>
+                <li>Автоматизировал процессы извлечения, трансформации и загрузки (ETL) данных из различных источников.</li>
+            </ul>
+            <p><a href="https://github.com/Qukli/PORTFOLIO">Мое портфолио на GitHub</a></p>
+        </section>
+    </div>
+</body>
+</html>
