@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
             background-color: #f5f5f5;
             color: #333;
         }
+
         .container {
             width: 90%;
             max-width: 1200px;
@@ -22,69 +24,99 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             position: relative;
         }
-        h1, h2, h3 {
+
+        h1,
+        h2,
+        h3 {
             color: #2c3e50;
         }
+
         h1 {
             font-size: 2.5em;
             margin-top: 20px;
         }
+
         .subtitle {
             font-size: 1.2em;
             color: #555;
             margin-top: -10px;
             margin-bottom: 20px;
         }
+
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
         }
+
         .contact-info {
             text-align: right;
             margin-top: 20px;
         }
+
         .contact-info p {
             margin: 5px 0;
         }
+
         h2 {
             font-size: 1.5em;
             border-bottom: 2px solid #2c3e50;
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
+
         p {
             line-height: 1.6;
         }
+
         .section {
             margin-bottom: 40px;
         }
+
         .skills {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
+
         .skills div {
             flex: 1;
             margin-right: 20px;
         }
+
         .skills div:last-child {
             margin-right: 0;
         }
+
         .education p {
             margin: 5px 0;
         }
+
         .degree {
             font-weight: bold;
         }
+
         .years {
             font-size: 0.9em;
             color: #666;
         }
+
         @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .contact-info {
+                text-align: left;
+                margin-top: 10px;
+            }
+
             .skills {
                 flex-direction: column;
             }
+
             .skills div {
                 margin-right: 0;
                 margin-bottom: 20px;
@@ -92,6 +124,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header class="header">
@@ -107,7 +140,10 @@
         </header>
         <section class="section">
             <h2>Краткая биография</h2>
-            <p>Я учусь на третьем курсе в институте по специальности "Информатика и вычислительная техника". Заканчиваю годовое обучение в GeekBrains, где хорошо усвоил SQL, Python, основы статистики, A/B тестирования, Power BI, Excel, нотации BPMN и UML. Есть интересные проекты в портфолио, связанные с визуализацией в Power BI, анализом данных в Python. На LeetCode решаю задачи на SQL (medium).</p>
+            <p>Я учусь на третьем курсе в институте по специальности "Информатика и вычислительная техника". Заканчиваю
+                годовое обучение в GeekBrains, где хорошо усвоил SQL, Python, основы статистики, A/B тестирования, Power
+                BI, Excel, нотации BPMN и UML. Есть интересные проекты в портфолио, связанные с визуализацией в Power
+                BI, анализом данных в Python. На LeetCode решаю задачи на SQL (medium).</p>
         </section>
         <section class="section">
             <h2>Навыки</h2>
@@ -142,16 +178,19 @@
             <h2>Проекты</h2>
             <p><strong>Участвование в соревнованиях на Kaggle</strong></p>
             <ul>
-                <li>Использовал Python, библиотеки Pandas, NumPy, Matplotlib и Seaborn для анализа данных и создания моделей машинного обучения.</li>
+                <li>Использовал Python, библиотеки Pandas, NumPy, Matplotlib и Seaborn для анализа данных и создания
+                    моделей машинного обучения.</li>
                 <li>Анализировал данные, создавал визуализации и разрабатывал модели для решения различных задач.</li>
             </ul>
             <p><strong>Создание дашбордов в Power BI и выполнение ETL процессов</strong></p>
             <ul>
                 <li>Разрабатывал интерактивные дашборды для визуализации данных, предоставляя инсайты для бизнеса.</li>
-                <li>Автоматизировал процессы извлечения, трансформации и загрузки (ETL) данных из различных источников.</li>
+                <li>Автоматизировал процессы извлечения, трансформации и загрузки (ETL) данных из различных источников.
+                </li>
             </ul>
             <p><a href="https://github.com/Qukli/PORTFOLIO">Мое портфолио на GitHub</a></p>
         </section>
     </div>
 </body>
+
 </html>
